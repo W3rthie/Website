@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    padding: 1%;
 }
 
 .blurred-text-container {
@@ -75,4 +76,44 @@ iframe {
     margin-bottom: .5%;
     border: 0px;
     box-shadow: 0px 0px 100px white;
+}
+
+#fluff-collection img {
+    position: absolute;
+}
+
+#fluff-1 {
+    margin-top: -47%;
+    margin-left: 7%;
+    transform: skew(10deg, 0deg);
+}
+
+#fluff-2 {
+    margin-top: -30%;
+    margin-left: 7%;
+    transform: skew(-10deg, 10deg);
+}
+
+#fluff-3 {
+    margin-top: -13%;
+    margin-left: 7%;
+    transform: skew(10deg, 0deg);
+}
+
+#fluff-4 {
+    margin-top: -47%;
+    margin-left: 82%;
+    transform: skew(0deg, 10deg);
+}
+
+#fluff-5 {
+    margin-top: -30%;
+    margin-left: 82%;
+    transform: skew(0deg, -10deg);
+}
+
+#fluff-6 {
+    margin-top: -13%;
+    margin-left: 82%;
+    transform: skew(0deg, 10deg);
 }
