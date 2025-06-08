@@ -1,4 +1,40 @@
 body {
-    background-color: rgb(10, 10, 10);
-    color: rgb(255, 255, 255);
+    background-image: url("Images/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
+
+.blurred-text-container {
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-shadow: -5px 5px 5px white;
+}
+
+h1 {
+    text-decoration: underline wavy;
+    text-decoration-thickness: 1px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.fa-brands {
+    scale: 2;
+    padding: 1.5%;
+    text-shadow: none;
+}
+
+a {text-decoration: none;}
+
+.fa-youtube {color: rgb(205, 32, 31);}
+.fa-twitter {color: rgb(29, 161, 242)}
+.fa-github {color: white;}
