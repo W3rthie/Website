@@ -82,6 +82,14 @@ iframe {
     position: absolute;
 }
 
+#fluff-collection img:hover {
+    animation: 0.5s linear 0s infinite running hoverScale;
+}
+
+.fa-brands:hover {
+    animation: 0.5s linear 0s infinite running hoverScale2;
+}
+
 #fluff-1 {
     margin-top: -47%;
     margin-left: 7%;
@@ -103,17 +111,29 @@ iframe {
 #fluff-4 {
     margin-top: -47%;
     margin-left: 82%;
-    transform: skew(0deg, 10deg);
+    transform: skew(10deg, 0deg);
 }
 
 #fluff-5 {
     margin-top: -30%;
     margin-left: 82%;
-    transform: skew(0deg, -10deg);
+    transform: skew(-10deg, 10deg);
 }
 
 #fluff-6 {
     margin-top: -13%;
     margin-left: 82%;
-    transform: skew(0deg, 10deg);
+    transform: skew(10deg, 0deg);
+}
+
+@keyframes hoverScale {
+    0% {scale: 1;}
+    50% {scale: 1.02;}
+    100% {scale: 1;}
+}
+
+@keyframes hoverScale2 {
+    0% {scale: 2;}
+    50% {scale: 2.1;}
+    100% {scale: 2;}
 }
