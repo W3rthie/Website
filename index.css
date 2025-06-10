@@ -2,37 +2,59 @@ body {
     background-image: url("Images/Background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
-    padding: 1%;
+    padding: 1vw;
 }
 
-.blurred-text-container {
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    border-width: 1px;
-    border-style: dashed;
-    border-color: white;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    color: white;
-    text-shadow: -5px 5px 4px rgb(20, 20, 20);
-    padding: .5%;
-    padding-top: 0;
+h1 {
+    font-size: 1.5vw;
 }
 
 p {
-    font-size: 20px;
-}
-
-.fa-brands {
-    scale: 2;
-    padding: 1.5%;
-    text-shadow: none;
+    font-size: .9vw;
 }
 
 a {
     text-decoration: none;
+}
+
+iframe {
+    width: 30vw;
+    height: 16vw;
+    margin-left: 33vw;
+    margin-bottom: 1vw;
+    border: 0;
+    box-shadow: 0 0 10vw white;
+}
+
+audio {
+    margin-left: 36vw;
+    width: 25vw;
+    height: 3vw;
+}
+
+.blurred-text-container {
+    backdrop-filter: blur(5px);
+    border-radius: .5vw;
+    border-width: .1vw;
+    border-style: dashed;
+    border-color: white;
+    width: 50vw;
+    height: 13vw;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-shadow: -.3vw .3vw .3vw rgb(20, 20, 20);
+    padding: 1vw;
+    padding-top: 0;
+}
+
+.social-icon {
+    width: 2vw;
+    padding-bottom: 1vw;
+}
+
+.social-icon:hover {
+    animation: 0.5s linear 0s infinite running hoverScale;
 }
 
 .fa-youtube {
@@ -47,77 +69,58 @@ a {
     color: white;
 }
 
-.roblox-icon {
-    background-image: url("Images/RobloxIcon.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 60%;
-    align-items: center;
-    position: absolute;
-    margin-top: 1.9%;
-    margin-left: 2.7%;
-}
-
 #socials {
-    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 10vw;
 }
 
-#videos {
-    margin-top: 1%;
-}
-
-iframe {
-    margin-left: 35%;
-    margin-bottom: .5%;
-    border: 0px;
-    box-shadow: 0px 0px 100px white;
-}
-
-#fluff-collection img, audio {
+#fluff-collection img {
     position: absolute;
+    aspect-ratio: 1;
+    width: 10vw;
+    height: 10vw;
 }
 
 #fluff-collection img:hover {
     animation: 0.5s linear 0s infinite running hoverScale;
 }
 
-.fa-brands:hover {
-    animation: 0.5s linear 0s infinite running hoverScale2;
-}
-
 #fluff-1 {
-    margin-top: -47%;
-    margin-left: 7%;
+    margin-top: -47vw;
+    margin-left: 6vw;
     transform: skew(10deg, 0deg);
 }
 
 #fluff-2 {
-    margin-top: -30%;
-    margin-left: 7%;
+    margin-top: -30vw;
+    margin-left: 6vw;
     transform: skew(-10deg, 10deg);
 }
 
 #fluff-3 {
-    margin-top: -13%;
-    margin-left: 7%;
+    margin-top: -13vw;
+    margin-left: 6vw;
     transform: skew(10deg, 0deg);
 }
 
 #fluff-4 {
-    margin-top: -47%;
-    margin-left: 82%;
+    margin-top: -47vw;
+    margin-left: 82vw;
     transform: skew(10deg, 0deg);
 }
 
 #fluff-5 {
-    margin-top: -30%;
-    margin-left: 82%;
+    margin-top: -30vw;
+    margin-left: 82vw;
     transform: skew(-10deg, 10deg);
 }
 
 #fluff-6 {
-    margin-top: -13%;
-    margin-left: 82%;
+    margin-top: -13vw;
+    margin-left: 82vw;
     transform: skew(10deg, 0deg);
 }
 
@@ -125,10 +128,4 @@ iframe {
     0% {scale: 1;}
     50% {scale: 1.02;}
     100% {scale: 1;}
-}
-
-@keyframes hoverScale2 {
-    0% {scale: 2;}
-    50% {scale: 2.1;}
-    100% {scale: 2;}
 }
